@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MPTVPC Calendar is a private, read-only calendar tool maintained by Magnús Pétursson.">
+  <title>MPTVPC Calendar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <p class="eyebrow">Personal read-only calendar integration</p>
+      <h1>MPTVPC Calendar</h1>
+      <p class="lede">A private tool maintained by Magnús Pétursson. It reads selected calendars from separately authorized accounts and prepares a local agenda.</p>
+      <nav aria-label="Page links">
+        <a class="button" href="privacy/">Privacy notice</a>
+        <a class="text-link" href="mailto:magnus@magnusp.is">Contact</a>
+      </nav>
+    </header>
+
+    <section aria-labelledby="purpose">
+      <h2 id="purpose">What it does</h2>
+      <p>The Google Calendar connector reads calendar metadata and selected event details within an explicit date range. The local agenda keeps each event’s source, preserves overlapping appointments, and warns when a source is missing or stale.</p>
+      <ul class="checks">
+        <li>Reads only explicitly selected calendars</li>
+        <li>Preserves source identity and overlaps</li>
+        <li>Does not create, edit, delete, or synchronize events</li>
+      </ul>
+      <p class="note">The Google connector and local agenda are working components. Additional calendar-provider delivery and unattended scheduling are separate setup steps; this page does not claim they are already running.</p>
+    </section>
+
+    <section aria-labelledby="permissions">
+      <h2 id="permissions">Google permissions</h2>
+      <div class="scope">
+        <code>calendar.calendarlist.readonly</code>
+        <p>Discovers calendar names, identifiers, time zones, and access roles, and verifies the intended account.</p>
+      </div>
+      <div class="scope">
+        <code>calendar.events.readonly</code>
+        <p>Reads selected calendar events for the requested date range.</p>
+      </div>
+      <p>Google grants these permissions across calendars accessible to the authorized account. A local allowlist determines which calendars the tool actually reads; that filter is not a separate Google permission boundary. Each account must be authorized individually.</p>
+      <p>The app does not request Gmail, Drive, or calendar-write access. It does not receive the user’s Google password; authorization takes place on Google’s website.</p>
+    </section>
+
+    <section aria-labelledby="privacy">
+      <h2 id="privacy">Privacy and contact</h2>
+      <p>These public pages describe the app. They do not display appointments, OAuth credentials, or private account lists.</p>
+      <p>See the <a href="privacy/">privacy notice</a> for data use, storage, optional assistant processing, retention, and removal instructions.</p>
+      <p>Support and privacy questions: <a href="mailto:magnus@magnusp.is">magnus@magnusp.is</a></p>
+    </section>
+
+    <footer>
+      <span>MPTVPC Calendar</span>
+      <span aria-hidden="true">·</span>
+      <a href="privacy/">Privacy</a>
+    </footer>
+  </main>
+</body>
+</html>

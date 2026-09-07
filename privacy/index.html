@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy notice for MPTVPC Calendar, a personal read-only calendar integration.">
+  <title>Privacy notice · MPTVPC Calendar</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <main>
+    <header class="hero compact">
+      <p class="eyebrow">MPTVPC Calendar</p>
+      <h1>Privacy notice</h1>
+      <p class="lede">This notice covers the Google Calendar connector and local agenda maintained by Magnús Pétursson.</p>
+      <p class="updated">Last updated: 7 September 2026</p>
+      <nav aria-label="Page links">
+        <a class="button" href="../">App homepage</a>
+        <a class="text-link" href="mailto:magnus@magnusp.is">Contact</a>
+      </nav>
+    </header>
+
+    <section aria-labelledby="access">
+      <h2 id="access">Information the app accesses</h2>
+      <p>After the owner authorizes an account through Google, the app accesses:</p>
+      <ul>
+        <li>Calendar identifiers, names, time zones, primary-calendar status, and access roles. This supports account verification and calendar selection.</li>
+        <li>For explicitly selected calendars and date ranges: event identifiers, titles, start and end times, useful locations, event status, and recurrence-instance metadata. These fields preserve all-day events, changed instances, and cancellations.</li>
+        <li>Account identity, authorization scopes, token expiry, and OAuth credentials needed to make authorized API requests.</li>
+      </ul>
+      <p>The connector does not request event descriptions, attendee lists, or attachments. It does not request Gmail, Drive, or calendar-write permissions. Titles and locations can themselves contain personal information.</p>
+      <p>Google’s read scopes cover the account’s accessible calendars. The app’s local allowlist limits actual event fetching; it does not narrow the permission granted by Google.</p>
+    </section>
+
+    <section aria-labelledby="use">
+      <h2 id="use">How information is used</h2>
+      <p>The app uses this information to verify account identity, read selected calendars, prepare the owner’s agenda, preserve source attribution, identify provable time overlaps, and report missing or stale data. It does not automatically resolve conflicts or infer hours actually worked from scheduled appointments.</p>
+      <p>The connector and agenda do not sell data, display advertising, build advertising profiles, train AI models, publish appointments on this website, or write changes back to calendars.</p>
+    </section>
+
+    <section aria-labelledby="assistant">
+      <h2 id="assistant">Optional assistant and messaging use</h2>
+      <p>The connector and agenda can run without an AI model. They do not themselves send event data to an AI provider or messaging platform.</p>
+      <p>If the owner asks an assistant such as Hermes to interpret or send an agenda, selected calendar text may be processed by the assistant’s configured model provider and, when requested, a messaging service such as WhatsApp. Those services have their own privacy and retention terms. The owner must approve the fields and destination and review applicable provider data-use settings before enabling that processing. API read permission alone is not authorization to share calendar contents elsewhere.</p>
+      <p>This notice does not claim that data sent to an external assistant or messaging service remains only on the local computer. Organizational calendars also remain subject to the organization’s rules.</p>
+    </section>
+
+    <section aria-labelledby="storage">
+      <h2 id="storage">Storage and security</h2>
+      <p>OAuth credentials are stored separately for each account, outside the source repository, in owner-restricted local directories and files. Calendar selections and minimal event snapshots are also stored locally. Diagnostic output is designed to avoid credentials and event bodies; source identifiers, counts, timestamps, and failure status may appear in operational records.</p>
+      <p>Local file permissions are not a claim of disk encryption. The computer’s security, backups, and any separately enabled services affect protection and recovery. No system can guarantee absolute security.</p>
+    </section>
+
+    <section aria-labelledby="retention">
+      <h2 id="retention">Retention and removal</h2>
+      <p>The current local tools do not impose an automatic deletion schedule for saved snapshots, credentials, or operational records. They remain until the owner removes them. A future scheduled integration needs an explicit retention policy before activation.</p>
+      <p>The owner can revoke the app’s Google access through <a href="https://myaccount.google.com/connections">Google Account connections</a>. Revocation stops future authorized access but does not erase snapshots already saved locally or information previously sent to another service.</p>
+      <p>To remove local data, stop the relevant tool or scheduled process and delete the account’s local credentials, selections, snapshots, and applicable copies or backups. Deleting a local copy does not delete an original calendar event. For help with access, correction, or deletion, contact <a href="mailto:magnus@magnusp.is">magnus@magnusp.is</a>.</p>
+    </section>
+
+    <section aria-labelledby="visiting">
+      <h2 id="visiting">Visiting these pages</h2>
+      <p>These informational pages do not ask visitors to connect a Google account and contain no calendar data, scripts, analytics, advertising, or tracking pixels. The website host receives ordinary web requests and may keep technical access logs under its own policies.</p>
+    </section>
+
+    <section aria-labelledby="changes">
+      <h2 id="changes">Changes</h2>
+      <p>This notice must be updated before materially changing the app’s data access, sharing, or retention practices. Additional account permissions or new destinations require separate authorization.</p>
+    </section>
+
+    <footer>
+      <a href="../">MPTVPC Calendar</a>
+      <span aria-hidden="true">·</span>
+      <a href="mailto:magnus@magnusp.is">magnus@magnusp.is</a>
+    </footer>
+  </main>
+</body>
+</html>
