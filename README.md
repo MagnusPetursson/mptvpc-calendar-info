@@ -5,7 +5,8 @@ Standalone static homepage and privacy notice for the private MPTVPC Calendar OA
 - No JavaScript
 - No analytics, trackers, fonts, or external assets
 - No calendar data or OAuth credentials
-- Intended for a separate public GitHub Pages repository; not yet published
+
+Published with GitHub Pages at https://magnusp.is/mptvpc-calendar-info/.
 
 Local preview:
 
